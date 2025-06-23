@@ -425,7 +425,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ```bash
 # Fork and clone the repository
-git clone https://github.com/yourusername/personal-finance-ai.git
+git clone https://github.com/LeenaKannan/Personal-FinanceAI.git
 
 # Create feature branch
 git checkout -b feature/amazing-feature
