@@ -1,0 +1,86 @@
+# Core FastAPI and web framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+gunicorn==21.2.0
+python-multipart==0.0.6
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+
+# Database
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+alembic==1.12.1
+redis==5.0.1
+
+# Data processing and ML
+pandas==2.1.3
+numpy==1.25.2
+scikit-learn==1.3.2
+tensorflow==2.13.0
+xgboost==2.0.1
+lightgbm==4.1.0
+
+# Financial data APIs
+yfinance==0.2.28
+alpha-vantage==2.3.1
+nsepy==0.8
+
+# NLP for transaction categorization
+nltk==3.8.1
+spacy==3.7.2
+transformers==4.35.2
+sentence-transformers==2.2.2
+
+# Time series forecasting
+prophet==1.1.5
+statsmodels==0.14.0
+pmdarima==2.0.4
+
+# PDF processing for bank statements
+PyPDF2==3.0.1
+pdfplumber==0.9.0
+tabula-py==2.8.2
+
+# Excel processing
+openpyxl==3.1.2
+xlrd==2.0.1
+
+# HTTP requests and web scraping
+requests==2.31.0
+httpx==0.25.2
+beautifulsoup4==4.12.2
+
+# Validation and serialization
+pydantic==2.5.0
+marshmallow==3.20.1
+
+# Security and encryption
+cryptography==41.0.8
+bcrypt==4.1.1
+
+# Background tasks
+celery==5.3.4
+flower==2.0.1
+
+# Monitoring and logging
+structlog==23.2.0
+sentry-sdk[fastapi]==1.38.0
+
+# Email notifications
+sendgrid==6.10.0
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+httpx==0.25.2
+
+# Development tools
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+pre-commit==3.5.0
+
+# Production server
+supervisor==4.2.5
