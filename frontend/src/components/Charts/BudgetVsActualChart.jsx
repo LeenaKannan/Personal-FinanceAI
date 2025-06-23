@@ -121,4 +121,6 @@ const BudgetVsActualChart = ({ data, title = "Budget vs Actual Spending" }) => {
   )
 }
 
+
 export default BudgetVsActualChart
+

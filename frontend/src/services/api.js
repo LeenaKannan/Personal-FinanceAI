@@ -109,4 +109,6 @@ export const healthAPI = {
   check: () => api.get('/health'),
 }
 
+
 export default api
+

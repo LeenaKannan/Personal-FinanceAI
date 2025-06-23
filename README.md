@@ -74,8 +74,8 @@ docker-compose logs -f
 
 ```bash
 # Clone repository
-git clone https://github.com/leenakannan/personal-finance-ai.git
-cd personal-finance-ai
+git clone https://github.com/LeenaKannan/Personal-FinanceAI.git
+cd Personal-FinanceAI
 
 # Install all dependencies
 npm run setup
@@ -329,7 +329,11 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md).
 ### Development Workflow
 ```bash
 # Fork and clone
-git clone https://github.com/yourusername/personal-finance-ai.git
+
+git clone https://github.com/LeenaKannan/Personal-FinanceAI.git
+
+
+
 
 # Create feature branch
 git checkout -b feature/amazing-feature
@@ -368,12 +372,8 @@ git push origin feature/amazing-feature
 - [ ] Advanced market predictions
 - [ ] Blockchain-based transactions
 
-## 📞 Support
 
-- **Documentation**: [Wiki](https://github.com/leenakannan/personal-finance-ai/wiki)
-- **Issues**: [GitHub Issues](https://github.com/leenakannan/personal-finance-ai/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/leenakannan/personal-finance-ai/discussions)
-- **Email**: support@personalfinanceai.com
+
 
 ## 📜 License
 
@@ -392,8 +392,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for the Indian Financial Ecosystem**
 
-[⭐ Star this repo](https://github.com/leenakannan/personal-finance-ai) •
-[🐛 Report Bug](https://github.com/leenakannan/personal-finance-ai/issues) •
-[✨ Request Feature](https://github.com/leenakannan/personal-finance-ai/issues)
+
+[⭐ Star this repo](https://github.com/LeenaKannan/Personal-FinanceAI) •
+[🐛 Report Bug](https://github.com/LeenaKannan/Personal-FinanceAI/issues) •
+[✨ Request Feature](https://github.com/LeenaKannan/Personal-FinanceAI/issues)
+
 
 </div>
