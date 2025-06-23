@@ -184,4 +184,6 @@ INDIAN_MUTUAL_FUND_CATEGORIES = [
     "Short Duration", "Medium Duration", "Long Duration", "Dynamic Bond",
     "Corporate Bond", "Credit Risk", "Banking & PSU", "Gilt",
     "Index Fund", "ETF", "Gold ETF", "International", "Sectoral"
+
 ]
+

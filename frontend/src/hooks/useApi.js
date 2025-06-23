@@ -202,4 +202,6 @@ export const useOfflineSupport = () => {
   const isOnline = navigator.onLine
   
   return { getCachedData, isOnline }
+
 }
+

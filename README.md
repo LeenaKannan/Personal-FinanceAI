@@ -329,7 +329,11 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md).
 ### Development Workflow
 ```bash
 # Fork and clone
+
 git clone https://github.com/LeenaKannan/Personal-FinanceAI.git
+
+
+
 
 # Create feature branch
 git checkout -b feature/amazing-feature
@@ -369,6 +373,8 @@ git push origin feature/amazing-feature
 - [ ] Blockchain-based transactions
 
 
+
+
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -386,8 +392,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for the Indian Financial Ecosystem**
 
+
 [⭐ Star this repo](https://github.com/LeenaKannan/Personal-FinanceAI) •
 [🐛 Report Bug](https://github.com/LeenaKannan/Personal-FinanceAI/issues) •
 [✨ Request Feature](https://github.com/LeenaKannan/Personal-FinanceAI/issues)
+
 
 </div>
