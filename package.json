@@ -1,0 +1,61 @@
+{
+  "name": "personal-finance-ai",
+  "version": "1.0.0",
+  "description": "AI-powered personal finance management system for Indian users",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && python app.py",
+    "build": "npm run build:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "start": "npm run start:frontend",
+    "start:frontend": "cd frontend && npm run preview",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:clean": "docker-compose down -v --remove-orphans && docker system prune -f",
+    "setup": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "lint": "cd frontend && npm run lint",
+    "lint:fix": "cd frontend && npm run lint:fix",
+    "format": "cd frontend && npm run format",
+    "test": "cd frontend && npm run test",
+    "test:coverage": "cd frontend && npm run test:coverage",
+    "deploy:prod": "docker-compose -f docker-compose.prod.yml up -d",
+    "backup:db": "docker-compose exec postgres pg_dump -U finance_user finance_ai_db > backup_$(date +%Y%m%d_%H%M%S).sql",
+    "restore:db": "docker-compose exec -T postgres psql -U finance_user finance_ai_db < backup.sql"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leenakannan/personal-finance-ai.git"
+  },
+  "keywords": [
+    "personal-finance",
+    "ai",
+    "machine-learning",
+    "react",
+    "fastapi",
+    "indian-market",
+    "expense-tracking",
+    "investment-analysis"
+  ],
+  "author": "Leena Kannan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leenakannan/personal-finance-ai/issues"
+  },
+  "homepage": "https://github.com/leenakannan/personal-finance-ai#readme"
+}

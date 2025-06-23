@@ -2,25 +2,58 @@
   "name": "personal-finance-ai-frontend",
   "version": "1.0.0",
   "private": true,
-  "description": "AI-powered personal finance assistant frontend",
+  "description": "AI-powered personal finance assistant frontend for Indian users",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint src --ext js,jsx --fix",
+    "format": "prettier --write src/**/*.{js,jsx,css,md}",
+    "type-check": "tsc --noEmit",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
+    "axios": "^1.6.2",
+    "@tanstack/react-query": "^5.17.9",
+    "@tanstack/react-query-devtools": "^5.17.9",
+    "react-hot-toast": "^2.4.1",
     "lucide-react": "^0.358.0",
-    "recharts": "^2.8.0"
+    "recharts": "^2.8.0",
+    "date-fns": "^3.0.6",
+    "react-hook-form": "^7.48.2",
+    "@hookform/resolvers": "^3.3.2",
+    "zod": "^3.22.4",
+    "clsx": "^2.0.0",
+    "react-dropzone": "^14.2.3",
+    "react-select": "^5.8.0",
+    "react-datepicker": "^4.25.0",
+    "framer-motion": "^10.16.16",
+    "react-intersection-observer": "^9.5.3",
+    "react-virtualized-auto-sizer": "^1.0.24",
+    "react-window": "^1.8.8"
   },
   "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.2.0",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
-    "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.5",
     "postcss": "^8.4.33",
@@ -29,6 +62,26 @@
     "postcss-preset-env": "^9.3.0",
     "postcss-reporter": "^7.0.5",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.2.0"
+    "vitest": "^1.1.0",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/user-event": "^14.5.1",
+    "jsdom": "^23.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
