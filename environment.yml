@@ -1,0 +1,151 @@
+name: personal-finance-ai
+channels:
+  - conda-forge
+  - defaults
+  - anaconda
+
+dependencies:
+  # Python and core packages
+  - python=3.10
+  - pip
+  - numpy>=1.24.0
+  - pandas>=2.0.0
+  - scipy>=1.10.0
+
+  # Machine Learning & AI
+  - scikit-learn>=1.3.0
+  - tensorflow>=2.13.0
+  - keras>=2.13.0
+  - xgboost>=1.7.0
+  - lightgbm>=4.0.0
+  - catboost>=1.2.0
+
+  # Data Analysis & Processing
+  - matplotlib>=3.7.0
+  - seaborn>=0.12.0
+  - plotly>=5.15.0
+  - openpyxl>=3.1.0
+  - xlrd>=2.0.0
+  - python-dateutil>=2.8.0
+  - pytz>=2023.3
+
+  # Natural Language Processing (for transaction categorization)
+  - nltk>=3.8.0
+  - spacy>=3.6.0
+  - textblob>=0.17.0
+
+  # Financial Data & APIs
+  - yfinance>=0.2.0
+  - quandl>=3.7.0
+
+  # Web Development & APIs
+  - flask>=2.3.0
+  - flask-cors>=4.0.0
+  - fastapi>=0.100.0
+  - uvicorn>=0.23.0
+  - requests>=2.31.0
+
+  # Database
+  - sqlite>=3.42.0
+  - sqlalchemy>=2.0.0
+  - pymongo>=4.4.0
+
+  # Data Validation & Processing
+  - pydantic>=2.0.0
+  - marshmallow>=3.20.0
+  - cerberus>=1.3.0
+
+  # Testing & Development
+  - pytest>=7.4.0
+  - pytest-cov>=4.1.0
+  - black>=23.7.0
+  - flake8>=6.0.0
+  - jupyter>=1.0.0
+  - jupyterlab>=4.0.0
+
+  # Utilities
+  - python-dotenv>=1.0.0
+  - schedule>=1.2.0
+  - tqdm>=4.65.0
+  - joblib>=1.3.0
+
+  # Node.js for React frontend
+  - nodejs>=18.0.0
+
+  # Additional pip packages not available in conda
+  - pip:
+      # Advanced ML libraries
+      - torch>=2.0.0
+      - transformers>=4.32.0
+      - sentence-transformers>=2.2.0
+
+      # Financial specific libraries
+      - alpha-vantage>=2.3.0
+      - ta-lib
+      - backtrader>=1.9.0
+      - zipline-reloaded>=3.0.0
+      - empyrical>=0.5.0
+      - pyfolio-reloaded>=0.9.0
+
+      # Indian financial data
+      - nsepy>=0.8.0
+      - jugaad-data>=0.25.0
+
+      # Advanced NLP for transaction parsing
+      - fuzzywuzzy>=0.18.0
+      - python-levenshtein>=0.21.0
+      - regex>=2023.6.0
+
+      # Time series analysis
+      - statsmodels>=0.14.0
+      - arch>=6.2.0
+      - pmdarima>=2.0.0
+      - prophet>=1.1.0
+
+      # Visualization enhancements
+      - dash>=2.12.0
+      - dash-bootstrap-components>=1.4.0
+      - streamlit>=1.25.0
+
+      # PDF processing (for bank statements)
+      - PyPDF2>=3.0.0
+      - pdfplumber>=0.9.0
+      - tabula-py>=2.7.0
+
+      # Excel processing
+      - xlsxwriter>=3.1.0
+      - openpyxl>=3.1.0
+
+      # Web scraping (for financial data)
+      - beautifulsoup4>=4.12.0
+      - selenium>=4.11.0
+
+      # Encryption & Security
+      - cryptography>=41.0.0
+      - bcrypt>=4.0.0
+
+      # Email notifications
+      - smtplib2>=0.2.0
+
+      # Caching
+      - redis>=4.6.0
+      - diskcache>=5.6.0
+
+      # Configuration management
+      - pyyaml>=6.0.0
+      - configparser>=6.0.0
+
+      # Logging
+      - loguru>=0.7.0
+
+      # Model deployment
+      - mlflow>=2.5.0
+      - bentoml>=1.0.0
+
+      # API documentation
+      - swagger-ui-bundle>=0.1.0
+
+      # Development tools
+      - pre-commit>=3.3.0
+      - bandit>=1.7.0
+      - mypy>=1.5.0
