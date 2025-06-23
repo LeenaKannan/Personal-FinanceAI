@@ -74,8 +74,8 @@ docker-compose logs -f
 
 ```bash
 # Clone repository
-git clone https://github.com/leenakannan/personal-finance-ai.git
-cd personal-finance-ai
+git clone https://github.com/LeenaKannan/Personal-FinanceAI.git
+cd Personal-FinanceAI
 
 # Install all dependencies
 npm run setup
