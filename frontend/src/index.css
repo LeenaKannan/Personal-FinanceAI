@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-ui-background text-ui-text-primary;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl;
+  }
+
+  h6 {
+    @apply text-base md:text-lg;
+  }
+}
+
+/* Custom components */
+@layer components {
+
+  /* Button styles */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply bg-brand-primary text-white hover:bg-brand-primary/90;
+  }
+
+  .btn-secondary {
+    @apply bg-brand-secondary text-white hover:bg-brand-secondary/90;
+  }
+
+  .btn-outline {
+    @apply border border-ui-border bg-transparent hover:bg-ui-background;
+  }
+
+  /* Card styles */
+  .card {
+    @apply rounded-lg border border-ui-border bg-ui-surface p-6 shadow-card;
+  }
+
+  /* Form styles */
+  .form-input {
+    @apply block w-full rounded-md border border-ui-border bg-ui-surface px-3 py-2 text-sm placeholder:text-ui-text-disabled focus:border-brand-primary focus:outline-none focus:ring-1 focus:ring-brand-primary;
+  }
+
+  .form-label {
+    @apply mb-2 block text-sm font-medium text-ui-text-primary;
+  }
+
+  .form-error {
+    @apply mt-1 text-sm text-brand-danger;
+  }
+
+  /* Badge styles */
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+
+  .badge-success {
+    @apply bg-finance-income/10 text-finance-income;
+  }
+
+  .badge-error {
+    @apply bg-finance-expense/10 text-finance-expense;
+  }
+
+  .badge-warning {
+    @apply bg-brand-warning/10 text-brand-warning;
+  }
+
+  .badge-info {
+    @apply bg-brand-info/10 text-brand-info;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  .animate-slide-down {
+    animation: slideDown 0.5s ease-out;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
