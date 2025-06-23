@@ -47,8 +47,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/leenakannan/personal-finance-ai.git
-cd personal-finance-ai
+git clone https://github.com/LeenaKannan/Personal-FinanceAI.git
+cd Personal-FinanceAI
 
 # Copy environment file and configure
 cp backend/.env.example backend/.env
